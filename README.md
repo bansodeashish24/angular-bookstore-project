@@ -1,6 +1,8 @@
-# AngularBookstoreProject
+# Angular Bookstore Project using New York Times Book API
 
 A bookstore project created using Angular v14 and [The New York Times Book API](https://developer.nytimes.com/docs/books-product/1/overview)
+
+You can view the [demo here](https://bansodeashish24.github.io/angular-bookstore-project)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
 
