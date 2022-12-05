@@ -1,3 +1,5 @@
+import { secrets } from 'secrets';
 export const environment = {
-  production: true
+  production: true,
+  newYorkTimesApiKey: secrets.newYorkTimesApiKey,
 };

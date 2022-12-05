@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -13,8 +14,7 @@ export class BookService {
    * @returns Observable<Object>
    */
   getBookCategories(): Observable<Object> {
-    const GET_CATEGORIES_URL =
-      'https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=XdFITPhFMGTcVDgeof9ZBeGljp9wnt27';
+    const GET_CATEGORIES_URL = `https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=${environment.newYorkTimesApiKey}`;
     return this.http.get(GET_CATEGORIES_URL);
   }
 
@@ -28,7 +28,7 @@ export class BookService {
     categoryName: string,
     date = 'current'
   ): Observable<Object> {
-    const GET_BOOKS_BY_CATEGORY_URL = `https://api.nytimes.com/svc/books/v3/lists/${date}/${categoryName}.json?api-key=XdFITPhFMGTcVDgeof9ZBeGljp9wnt27`;
+    const GET_BOOKS_BY_CATEGORY_URL = `https://api.nytimes.com/svc/books/v3/lists/${date}/${categoryName}.json?api-key=${environment.newYorkTimesApiKey}`;
     return this.http.get(GET_BOOKS_BY_CATEGORY_URL);
   }
 }
