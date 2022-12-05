@@ -1,0 +1,43 @@
+.example-card {
+  //   max-width: 220px;
+  //   height: 370px;
+  max-width: 300px;
+  height: 400px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.book-image {
+  height: 52%;
+  cursor: pointer;
+}
+
+.card-content {
+  height: 15%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+.book-title {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-card-header {
+  cursor: pointer;
+}
+
+::ng-deep .book-card-header .mat-card-header-text {
+  margin: 0px;
+  width: 100%;
+}
