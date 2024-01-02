@@ -2,6 +2,8 @@
 
 A bookstore project created using Angular v14 and [The New York Times Book API](https://developer.nytimes.com/docs/books-product/1/overview)
 
+This is a basic project, used to train my students in workshops. It Was developed live during classroom sessions and is intended to teach the most important concepts of Angular (Modules, Services, Routing, REST API calling, Component Creation, Angular Material, etc.)
+
 You can view the [demo here](https://bansodeashish24.github.io/angular-bookstore-project)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
